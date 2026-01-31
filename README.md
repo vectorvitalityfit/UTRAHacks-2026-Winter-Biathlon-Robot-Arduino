@@ -1,6 +1,6 @@
 # 🤖 Winter Biathlon Robot (UTRAHacks 2026)
 
-Codebase for an autonomous Arduino robot designed to compete in the Winter Olympics Biathlon & Obstacle Challenge. This project prioritizes a **"Middle Pace" strategy**—balancing speed with high-torque precision to minimize penalties.
+Codebase for an autonomous Arduino robot designed to compete in the Winter Olympics Biathlon & Obstacle Challenge. This project prioritizes a **"Middle Pace" strategy** by balancing speed with high-torque precision to minimize penalties.
 
 ## 🏆 Key Features
 * **Finite State Machine (FSM):** Modular architecture handling distinct phases (Box Pickup, Ramp Ascent, Target Logic, Obstacle Avoidance).
