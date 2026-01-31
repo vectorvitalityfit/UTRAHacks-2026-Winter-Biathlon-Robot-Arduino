@@ -1,0 +1,42 @@
+// // MH Sensor Series Digital Output (DO)
+// int irSensorPin = 4; // Connect DO to Pin 2 // Onboard LED
+// int sensorState = 0;
+
+// void setup() {
+//   pinMode(irSensorPin, INPUT);
+//   Serial.begin(9600);
+// }
+
+// void loop() {
+//   sensorState = digitalRead(irSensorPin); // HIGH=No obstacle, LOW=Obstacle
+//   if (sensorState == LOW) {
+  
+//     Serial.println("Object Detected!");
+//   } else {
+//     Serial.println("No Object!");
+//   }
+//   delay(100);
+// }
+// MH Sensor Series Digital Output (DO)
+int irAnalogPin = A0;
+int irAnalogPin2 = A1;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  int value = analogRead(irAnalogPin); // 0–1023
+  int value2 = analogRead(irAnalogPin2);
+
+  Serial.println(value);
+  Serial.println(value2);
+
+  if (value < 105 && value2 < 105) {   // threshold (tune this!)
+    Serial.println("White detected");
+  } else {
+    Serial.println("Black detected");
+  }
+
+  delay(100);
+}
